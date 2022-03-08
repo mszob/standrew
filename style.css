@@ -5,6 +5,13 @@
     text-align: center;
 }
 
+#content {
+    position: relative;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+}
+
 h1, h2 {
     color:cadetblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -42,8 +49,6 @@ p {
 }
 
 h2+p, h2+p+p {
-    position: relative;
     text-align: left;
-    left: 50%;
-    margin-left: -370px;
+    font-size: 19px;
 }
