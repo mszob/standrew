@@ -52,3 +52,7 @@ h2+p, h2+p+p {
     text-align: left;
     font-size: 19px;
 }
+
+em {
+    color:cadetblue;
+}
