@@ -98,9 +98,6 @@ a:hover {
 h1.title a {
     text-decoration: underline;
 }
-h1.title a:hover {
-    text-decoration: none;
-}
 
 #about {
     position: fixed;
