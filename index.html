@@ -78,7 +78,11 @@
 </div>
 
 
-<audio src="joe.mp3" id="myAudio"></audio>
+<audio id="myAudio">
+    <source src="joe.ogg" type="audio/ogg">
+    <source src="joe.mp3" type="audio/mpeg">  
+</audio>
+<audio src="joe.ogg" id=""></audio>
 <script>
   function playMyAudio(){
     document.getElementById("myAudio").play();
