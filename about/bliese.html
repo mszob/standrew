@@ -37,7 +37,9 @@
         #mainDialog {
             max-width: 350px;
             border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            border-top: 2px dotted grey;
+            border-bottom: 2px dotted grey;
+            border: 2px dotted grey;
             margin-left: auto;
             margin-right: auto;
             background-color: #FFFFFF;
@@ -75,7 +77,7 @@
         }
         
         #success {
-            color: cadetblue;
+            color: black;
         }
         
         #submitPass {
@@ -128,12 +130,12 @@
                     <input id="pass" type="password" name="pass" autofocus placeholder="Password">
                     <div>
                         <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Sorry, please try again.</span>
+                            <span id="invalidPass" class="error">Nice try, but no.</span>
                             <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Success!</span>
+                            <span id="success" class="notifyText">Not bad, not bad.</span>
                             &nbsp;
                         </span>
-                        <button id="submitPass" type="button">I am worthy!</button>
+                        <button id="submitPass" type="button">I remember!</button>
                         <div style="clear: both;"></div>
                     </div>
                 </div>
