@@ -5,26 +5,56 @@
     <title>St.Andrew</title>
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preload" href="cmunrm.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 
 <body>
+
+
 <div id="content">
 
     <div id="banner">
     <p><img src="favicon.png" class="icon" style="width: 50px;"></p>
     <h1 class="title">Welcome to <a href="bliese.html" target="_blank">St.Andrew</a>!</h1>
+    <!--ABOUT US
+    <hr>
+    <p><a href="bliese.html" target="_blank">About us</a></p>-->
     <p>Unfortunately, our website is currently under maintenance. </p>
         <p>Urgent announcements will continue to be posted here. For all other assistance, please contact the office:</p>
         <p><em><a href="mailto:st.andrew.church@protonmail.com?subject=Donut confession">st.andrew.church@protonmail.com</a></em></p>
+    
+        <hr>
+    
     </div>
-
-    <hr>
 
     <div id="alert">
     <h1>Urgent announcements</h1>
     <p>Someone has been stealing donuts from the kitchen. Please stop.</p>
     <p>Arabic club has been moved to Thursdays.</p>
     </div>
+
+    <hr>
+
+    <h1>Random heading</h1>
+
+    <p>Random text.</p>
+
+    <div class="illustration">
+    <p><img id="bird" onmouseover="playMyAudio()" onmouseleave="pauseMyAudio()" src="bird.png" /></p>
+    <p id="songw"><img id="song" onmouseover="playMyAudio()" onmouseleave="pauseMyAudio()" src="song.png" /></p>
+    </div>
+
+    <p>Here is some random text.</p>
+
+<!--
+    <div id="about">
+           <a href="bliese.html">About</a>
+         <span class="spacing">•</span><a href="bliese.html">Donate</a>
+         <span class="spacing">•</span><a href="bliese.html">Donate</a>
+         <span class="spacing">•</span><a href="bliese.html">Donate</a>
+    </div>
+-->
 
     <!--<hr>
 
@@ -46,5 +76,17 @@
 
 
 </div>
+
+
+<audio src="joe.mp3" id="myAudio"></audio>
+<script>
+  function playMyAudio(){
+    document.getElementById("myAudio").play();
+  }
+  function pauseMyAudio(){
+    document.getElementById("myAudio").pause();
+  }
+</script>
+
 </body>
 </html>

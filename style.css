@@ -1,3 +1,16 @@
+:root {
+    --grey:     rgb(150,150,150);
+}
+
+
+@font-face {
+    font-family: 'Hello';
+    src: url('cmunrm.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Fields */
 
 #content {
@@ -24,11 +37,13 @@ h1 {
     font-size: 30px;
     font-weight:100;
     margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 hr {
     margin-top: 50px;
     width: 600px;
+    border: 1px dashed grey;
 }
 
 a {
@@ -53,6 +68,20 @@ a:hover {
     font-weight: 600;
 }
 
+/* ABOUT US
+.title+hr {
+    width: 400px;
+    border: 1px solid cadetblue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    opacity: 0.5;
+}
+.title+hr+p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+*/
+
 #alert p:before {
     content: "!";
     font-size: 18px;
@@ -64,4 +93,55 @@ a:hover {
     padding-right: 5px;
     margin-right: 10px;
     font-weight: bold;
+}
+
+h1.title a {
+    text-decoration: underline;
+}
+h1.title a:hover {
+    text-decoration: none;
+}
+
+#about {
+    position: fixed;
+    bottom: 0px; 
+    width: 700px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    color: var(--grey);
+}
+#about a {
+    color: var(--grey);
+}
+
+.spacing {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#bird {
+    width: 300px;
+}
+
+#songw {
+    position: relative;
+    top: -210px;
+    margin-bottom: -210px;
+}
+
+#song {
+    opacity: 0;
+    width: 300px;
+}
+
+#song:hover {
+    opacity: 1;
+}
+
+.illustration {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
 }
