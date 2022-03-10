@@ -118,23 +118,24 @@ h1.title a {
     margin-right: 20px;
 }
 
-#bird {
-    width: 300px;
-}
-
 #songw {
     position: relative;
-    top: -210px;
+    top: -140px;
     margin-bottom: -210px;
 }
 
 #song {
     opacity: 0;
-    width: 300px;
+    width: 200px;
 }
 
 #song:hover {
     opacity: 1;
+}
+
+
+#bird {
+    width: 200px;
 }
 
 .illustration {
