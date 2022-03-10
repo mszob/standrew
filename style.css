@@ -2,7 +2,6 @@
     --grey:     rgb(150,150,150);
 }
 
-        /* Font-faces */
 
 @font-face {
     font-family: 'Hello';
@@ -12,7 +11,7 @@
     font-display: swap;
 }
 
-        /* Fields */
+/* Fields */
 
 #content {
     position: relative;
@@ -28,17 +27,18 @@
 #banner {
     text-align: center;
     font-size: 24px;
+    margin-bottom: 75px;
 }
 
-        /* HTML elements */
+/* HTML elements */
 
 h1 {
-    color:cadetblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     font-weight:100;
     margin-top: 50px;
     margin-bottom: 0px;
+    border-bottom: 2px dotted var(--grey);
 }
 
 hr {
@@ -47,27 +47,35 @@ hr {
     border: 1px dashed grey;
 }
 
-a {
+a, a:hover, a:visited {
     color:cadetblue;
-    text-decoration: none;
 }
 
-a:hover {
-    color: cadetblue;
-    text-decoration: underline;
+audio {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
 }
 
-        /* Special styles */
+/* Special classes */
 
 /* OG banner */
 .icon {
     margin-top: 60px;
 }
 
-.title {
+h1.title {
+    color: cadetblue;
     font-size: 50px;
     margin-top: 25px;
     font-weight: 600;
+    border-bottom: 0px solid var(--grey);
+}
+
+#banner a {
+    text-decoration: none;
+}
+#banner a:hover {
+    text-decoration: underline;
 }
 
 #alert p:before {
@@ -83,11 +91,24 @@ a:hover {
     font-weight: bold;
 }
 
-h1.title a {
-    text-decoration: underline;
+#footer {
+    position: fixed;
+    bottom: 0px; 
+    width: 700px;
+    padding: 2px;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    color: var(--grey);
+}
+#footer a {
+    color: var(--grey);
 }
 
-/* Birds */
+.spacing {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 #songw {
     position: relative;
@@ -114,3 +135,5 @@ h1.title a {
     padding-bottom: 40px;
     text-align: center;
 }
+
+/* Vault */
