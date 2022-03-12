@@ -2,7 +2,6 @@
     --grey:     rgb(150,150,150);
 }
 
-
 @font-face {
     font-family: 'Hello';
     src: url('cmunrm.ttf');
@@ -91,7 +90,7 @@ h1.title {
     content: "!";
     font-size: 18px;
     color: white;
-    background-color: rgb(255, 95, 95);
+    background-color: cadetblue;
     border-radius: 3px;
     padding: 2px;
     padding-left: 5px;
