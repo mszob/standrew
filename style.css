@@ -12,7 +12,11 @@
 
 /* Fields */
 
-#content {
+body {
+    margin: 0px;
+}
+
+.content {
     position: relative;
     width: 700px;
     left: 50%;
@@ -145,3 +149,26 @@ h1.title {
 }
 
 /* Vault */
+
+
+/* Vimeo */
+
+.player .vp-controls-wrapper .vp-title {
+    visibility: hidden !important;
+}
+
+.cinema {
+    padding: 20px;
+    background-color: black;
+    padding-bottom: 40px;
+}
+
+.cinema h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.cinema h2, h3 {
+    color: rgb(99, 181, 184);
+    font-family: sans-serif;
+}
