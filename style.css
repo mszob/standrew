@@ -138,11 +138,6 @@ h1.title {
     opacity: 1;
 }
 
-
-#bird {
-    width: 200px;
-}
-
 .illustration {
     padding-bottom: 40px;
     text-align: center;
@@ -174,5 +169,5 @@ h1.title {
 }
 
 #birds img {
-    width: 49%;
+    width: 49% !important;
 }
