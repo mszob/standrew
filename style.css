@@ -143,10 +143,14 @@ h1.title {
     text-align: center;
 }
 
-/* Vault */
+/* LIBRARY */
+
+#birds img {
+    width: 49% !important;
+}
 
 
-/* Vimeo */
+/* Cinema */
 
 .player .vp-controls-wrapper .vp-title {
     visibility: hidden !important;
@@ -166,8 +170,4 @@ h1.title {
 .cinema h2, h3 {
     color: rgb(99, 181, 184);
     font-family: sans-serif;
-}
-
-#birds img {
-    width: 49% !important;
 }
