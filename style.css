@@ -112,6 +112,7 @@ h1.title {
     text-align: center;
     font-size: 15px;
     color: var(--grey);
+    z-index: -2;
 }
 #footer a {
     color: var(--grey);
@@ -143,7 +144,6 @@ h1.title {
 }
 
 .illustration {
-    padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -171,4 +171,8 @@ h1.title {
 .cinema h2, h3 {
     color: rgb(99, 181, 184);
     font-family: sans-serif;
+}
+
+#birds img {
+    width: 49%;
 }

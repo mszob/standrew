@@ -1,62 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <title>St.Andrew</title>
-    <link rel="icon" href="assets/favicon.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <!--<link rel="preload" href="assets/cmunrm.ttf" as="font" type="font/ttf" crossorigin>-->
+    <style>
+        :root {
+            --grey:     rgb(150,150,150);
+        }
+
+        @font-face {
+            font-family: 'Hello';
+            src: url('cmunrm.ttf');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        /* Fields */
+        
+        body {
+            margin: 0px;
+        }
+        
+        div#home.content {
+            position: absolute;
+            width: 600px;
+            left: 50%;
+            margin-left: -330px;
+            height: 650px;
+            top: 50%;
+            margin-top: -370px;
+
+            background-color: white;
+            border: 3px solid cadetblue;
+            border-radius: 30px;
+
+            line-height: 1.5;
+            color: rgb(70,70,70);
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 30px;
+        }
+        
+        #banner {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 75px;
+        }
+        
+        /* HTML elements */
+        
+        h1 {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            font-weight:100;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            border-bottom: 2px dotted var(--grey);
+        }
+        
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        hr {
+            margin-top: 50px;
+            border: 1px dashed grey;
+        }
+        
+        a, a:hover, a:visited {
+            color:cadetblue;
+        }
+        
+        audio {
+            padding: 20px 0px 20px 0px;
+        }
+        
+        /* Special classes */
+        
+        /* OG banner */
+        
+        h1.title {
+            color: cadetblue;
+            font-size: 50px;
+            margin-top: 25px;
+            font-weight: 600;
+            border-bottom: 0px solid var(--grey);
+        }
+        
+        #banner a {
+            text-decoration: none;
+        }
+        #banner a:hover {
+            text-decoration: underline;
+        }
+        
+        #alert p:before {
+            content: "!";
+            font-size: 18px;
+            color: white;
+            background-color: cadetblue;
+            border-radius: 3px;
+            padding: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        #footer {
+            position: absolute;
+            width: 640px;
+            bottom: 0px;
+            text-align: center;
+        }
+        div.birds {
+            position: fixed;
+        	height: 100%;
+        	/* max-height: 600px; */
+        	width: 100%;
+        	background-image:		
+        		url('assets/butt.png'), 
+        		url('assets/esh.png'),
+        		url('assets/fancy.png'),
+        		url('assets/stopper.png'),
+        		url('assets/upchucker.png');
+        	background-repeat: repeat-x;
+        	background-position: 
+        		0 20%,
+        		0 80%,
+        		0 50%,
+        		0 2%,
+        		0 100%;
+        	background-size: 
+        		400px,
+        		350px,
+        		300px,
+        		250px,
+        		200px;
+        	animation: 30s para infinite linear;
+        	}
+        @keyframes para {
+        	100% {
+        		background-position: 
+        			5000px 20%,
+        			2000px 80%,
+        			800px 50%,
+        			500px 2%,
+        			400px 100%;
+        		}
+        	}
+    </style>
 </head>
 
 <body>
+    
+    <div class="birds"></div>
 
+    <div class="content" id="home">
 
-<div class="content">
-
-    <div id="banner">
-    <p><img src="assets/favicon.png" class="icon" style="width: 50px;"></p>
-    <h1 class="title">Welcome to St.Andrew!</h1>
-    <!--ABOUT US
-    <hr>
-    <p><a href="bliese.html" target="_blank">About us</a></p>-->
-    <p>Unfortunately, our website is currently under maintenance. </p>
-        <p>Urgent announcements will continue to be posted here. For all other assistance, please contact the office:</p>
-        <p><em><a href="mailto:st.andrew.church@protonmail.com?subject=Donut confession">st.andrew.church@protonmail.com</a></em></p>
-        
+        <div id="banner">
+        <p><img src="assets/favicon.png" class="icon" style="width: 50px;"></p>
+        <h1 class="title">Welcome to St.Andrew!</h1>
+        <p>Unfortunately, our website is currently under maintenance. </p>
+            <p>Urgent announcements will continue to be posted here. <br/>For all other assistance, please contact the office:</p>
+            <p><em><a href="mailto:st.andrew.church@protonmail.com?subject=Donut confession">st.andrew.church@protonmail.com</a></em></p>
+        </div>
+    
+        <div id="alert">
+        <h1>Urgent announcements</h1>
+        <p>Someone has been stealing donuts from the kitchen. Please stop.</p>
+        <p>Arabic club has been moved to Thursdays.</p>
+        </div>
+    
+        <div id="footer">
+            <p><a href="library.html">Library</a></p>
+        </div>
+    
     </div>
-
-    <div id="alert">
-    <h1>Urgent announcements</h1>
-    <p>Someone has been stealing donuts from the kitchen. Please stop.</p>
-    <p>Arabic club has been moved to Thursdays.</p>
-    </div>
-
-    <div class="illustration">
-    <p><img id="bird" onmouseover="playMyAudio()" onmouseleave="pauseMyAudio()" src="assets/bird.png" /></p>
-    <p id="songw"><img id="song" onmouseover="playMyAudio()" onmouseleave="pauseMyAudio()" src="assets/song.png" /></p>
-    </div>
-
-    <div id="footer">
-        <p><a href="library.html">Library</a></p>
-    </div>
-
-</div>
-
-
-<audio id="myAudio" preload="auto">
-    <!--<source src="joe.ogg" type="audio/ogg">-->
-    <source preload="auto" src="assets/joe.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  function playMyAudio(){
-    document.getElementById("myAudio").play();
-  }
-  function pauseMyAudio(){
-    document.getElementById("myAudio").pause();
-  }
-</script>
-
+ 
 </body>
+
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>St.Andrew</title>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!--<link rel="preload" href="assets/cmunrm.ttf" as="font" type="font/ttf" crossorigin>-->
+</head>
+
+<body>
+
+
+<div class="content" id="home">
+
+    <div id="banner">
+    <p><img src="assets/favicon.png" class="icon" style="width: 50px;"></p>
+    <h1 class="title">Welcome to St.Andrew!</h1>
+    <!--ABOUT US
+    <hr>
+    <p><a href="bliese.html" target="_blank">About us</a></p>-->
+    <p>Unfortunately, our website is currently under maintenance. </p>
+        <p>Urgent announcements will continue to be posted here. For all other assistance, please contact the office:</p>
+        <p><em><a href="mailto:st.andrew.church@protonmail.com?subject=Donut confession">st.andrew.church@protonmail.com</a></em></p>
+        
+    </div>
+
+    <div id="alert">
+    <h1>Urgent announcements</h1>
+    <p>Someone has been stealing donuts from the kitchen. Please stop.</p>
+    <p>Arabic club has been moved to Thursdays.</p>
+    </div>
+
+    <div id="footer">
+        <p><a href="library.html">Library</a></p>
+    </div>
+
+</div>
+
+<!--<div class="content">
+  <div class="illustration">
+    <p><img id="bird" onmouseover="playMyAudio()" onmouseleave="pauseMyAudio()" src="assets/bird.png" /></p>
+    <p id="songw"><img id="song" onmouseover="playMyAudio()" onmouseleave="pauseMyAudio()" src="assets/song.png" /></p>
+    </div>
+</div>-->
+
+<div id="homebirds">
+  <img id="fancy" src="assets/fancy.png">
+  <img id="butt" src="assets/butt.png">
+  <img id="esh" src="assets/esh.png">
+  <img id="upchucker" src="assets/upchucker.png">
+  <img id="stopper" src="assets/stopper.png">
+</div>
+
+
+<audio id="myAudio" preload="auto">
+    <!--<source src="joe.ogg" type="audio/ogg">-->
+    <source preload="auto" src="assets/joe.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMyAudio(){
+    document.getElementById("myAudio").play();
+  }
+  function pauseMyAudio(){
+    document.getElementById("myAudio").pause();
+  }
+</script>
+
+</body>
+</html>
