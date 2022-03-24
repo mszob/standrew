@@ -177,7 +177,7 @@ table td {
 
 .notes, .notes a {
     color: var(--grey);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 /*Wallpaper*/
@@ -219,7 +219,7 @@ div.birds {
             2000px 65%,
             500px 1%,
             800px 37%,
-            800px 87%,
-            800px 100%;
+            600px 87%,
+            900px 100%;
         }
     }
