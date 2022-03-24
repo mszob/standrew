@@ -27,21 +27,36 @@ body {
     padding-bottom: 50px;
 }
 
+div#home {
+    position: absolute;
+    width: 540px;
+    left: 50%;
+    margin-left: -300px;
+    height: 600px;
+    top: 50%;
+    margin-top: -350px;
+    padding: 30px;
+
+    background-color: white;
+    border: 3px solid cadetblue;
+    border-radius: 30px;
+
+    line-height: 1.5;
+    color: rgb(70,70,70);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 #banner {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 75px;
 }
 
 /* HTML elements */
 
-body {
-    background-color: white;
-}
-
 h1 {
+    font-size: 35px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
     font-weight:100;
     margin-top: 50px;
     margin-bottom: 0px;
@@ -49,6 +64,7 @@ h1 {
 }
 
 h2 {
+    font-size: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -70,7 +86,10 @@ audio {
 
 /* Special classes */
 
-/* OG banner */
+/* Banner */
+#home .icon {
+    margin-top: 0px;
+}
 .icon {
     margin-top: 60px;
 }
@@ -104,49 +123,33 @@ h1.title {
 }
 
 #footer {
-    position: fixed;
-    bottom: 0px; 
-    width: 700px;
-    padding: 2px;
-    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 540px;
     text-align: center;
-    font-size: 15px;
-    color: var(--grey);
-    z-index: -2;
-}
-#footer a {
-    color: var(--grey);
 }
 
-.spacing {
-    margin-left: 20px;
-    margin-right: 20px;
+#home h1 {
+    font-size: 26px;
 }
 
-#songw {
-    position: relative;
-    top: -140px;
-    margin-bottom: -210px;
-}
-
-#song {
-    opacity: 0;
-    width: 200px;
-}
-
-#song:hover {
-    opacity: 1;
-}
-
-.illustration {
-    padding-bottom: 40px;
-    text-align: center;
+#home h1.title {
+    font-size: 36px;
 }
 
 /* LIBRARY */
 
 #birds img {
     width: 49% !important;
+}
+table img {
+    width: 100%;
+}
+table td {
+    padding: 15px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: grey;
 }
 
 
@@ -171,3 +174,52 @@ h1.title {
     color: rgb(99, 181, 184);
     font-family: sans-serif;
 }
+
+.notes, .notes a {
+    color: var(--grey);
+    opacity: 0.5;
+}
+
+/*Wallpaper*/
+
+div.birds {
+    filter: blur(100%);
+    position: fixed;
+    height: 100%;
+    /* max-height: 600px; */
+    width: 100%;
+    background-image:		
+        url('assets/butt.png'), 
+        url('assets/esh.png'),
+        url('assets/stopper.png'),
+        url('assets/fancy.png'),
+        url('assets/fancy.png'),
+        url('assets/upchucker.png');
+    background-repeat: repeat-x;
+    background-position: 
+        0 13%,
+        0 65%,
+        0 1%,
+        0 37%,
+        0 87%,
+        0 100%;
+    background-size: 
+        400px,
+        350px,
+        250px,
+        300px,
+        300px,
+        200px;
+    animation: 30s para infinite linear;
+    }
+@keyframes para {
+    100% {
+        background-position: 
+            3500px 13%,
+            2000px 65%,
+            500px 1%,
+            800px 37%,
+            800px 87%,
+            800px 100%;
+        }
+    }
