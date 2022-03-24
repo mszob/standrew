@@ -143,13 +143,19 @@ table td img {
     width: 100%;
 }
 table td {
-    padding: 15px;
     font-family: sans-serif;
     font-style: italic;
     color: grey;
     width: 49%;
 }
 
+table tr:nth-child(odd) td {
+    padding: 40px 40px 0px 40px;
+}
+
+table tr:nth-child(even) td {
+    padding-left: 35px;
+}
 
 /* Cinema */
 
