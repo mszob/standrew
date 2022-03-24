@@ -139,10 +139,7 @@ h1.title {
 
 /* LIBRARY */
 
-#birds img {
-    width: 49% !important;
-}
-table img {
+table td img {
     width: 100%;
 }
 table td {
@@ -150,6 +147,7 @@ table td {
     font-family: sans-serif;
     font-style: italic;
     color: grey;
+    width: 49%;
 }
 
 
