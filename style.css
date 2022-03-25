@@ -16,26 +16,41 @@ body {
     margin: 0px;
 }
 
-.content:not(.cinema .content) {
+.wrapper {
     background-color: white;
-    border: 3px solid cadetblue;
+    border: 1px solid cadetblue;
 }
 
-.content {
+.wrapper {
     position: relative;
-    width: 744px;
-    left: 50%;
-    margin-left: -455px;
+    margin-left: 4%;
+    margin-right: 4%;
     line-height: 1.5;
     color: rgb(70,70,70);
     font-family:Arial, Helvetica, sans-serif;
-    padding: 50px 80px 50px 80px;
+    padding: 50px 80px 60px 80px;
     border-radius: 10px;
+    min-width: 700px;
 }
 
-.content.top {
-    top: 50px;
+.wrapper.top {
+    top: 40px;
     z-index: 1;
+}
+
+.wrapper.top.cinema {
+    top: 0px;
+    position: absolute;
+    margin: 4% 4% 4% 4%;
+    padding: 5%;
+    width: 82%;
+    height: 82%;
+}
+
+.content {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div#home {
@@ -60,7 +75,6 @@ div#home {
 #banner {
     text-align: center;
     font-size: 20px;
-    margin-bottom: 65px;
 }
 
 /* HTML elements */
@@ -98,6 +112,11 @@ audio {
 /* Special classes */
 
 /* Banner */
+
+.icon {
+    width: 50px;
+    text-align: center;
+}
 
 h1.title {
     color: cadetblue;
@@ -188,20 +207,15 @@ table tr:nth-child(even) td {
 .cinema {
     position: relative;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.95);
     padding-bottom: 40px;
-    border-top: 3px solid cadetblue;
-    z-index: 2;
-    margin-top: 100px;
 }
 
 .cinema h1 {
     font-size: 50px;
-    color: white;
+    margin-top: 0px;
 }
 
 .cinema h2, h3 {
-    color: white;
     font-family: sans-serif;
 }
 
