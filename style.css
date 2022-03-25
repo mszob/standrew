@@ -16,15 +16,26 @@ body {
     margin: 0px;
 }
 
+.content:not(.cinema .content) {
+    background-color: white;
+    border: 3px solid cadetblue;
+}
+
 .content {
     position: relative;
-    width: 700px;
+    width: 744px;
     left: 50%;
-    margin-left: -350px;
+    margin-left: -455px;
     line-height: 1.5;
     color: rgb(70,70,70);
     font-family:Arial, Helvetica, sans-serif;
-    padding-bottom: 50px;
+    padding: 50px 80px 50px 80px;
+    border-radius: 10px;
+}
+
+.content.top {
+    top: 50px;
+    z-index: 1;
 }
 
 div#home {
@@ -87,12 +98,6 @@ audio {
 /* Special classes */
 
 /* Banner */
-#home .icon {
-    margin-top: 0px;
-}
-.icon {
-    margin-top: 60px;
-}
 
 h1.title {
     color: cadetblue;
@@ -167,7 +172,7 @@ table tr:nth-child(even) td {
     opacity: 0.7;
     text-align: center;
     font-style: normal;
-    background-color: rgb(255, 249, 242);
+    background-color: rgb(255, 251, 244);
     padding: 15px;
     border-radius: 10px;
     border: 1px solid rgb(201, 176, 143);
@@ -181,9 +186,13 @@ table tr:nth-child(even) td {
 }
 
 .cinema {
+    position: relative;
     padding: 20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.95);
     padding-bottom: 40px;
+    border-top: 3px solid cadetblue;
+    z-index: 2;
+    margin-top: 100px;
 }
 
 .cinema h1 {
@@ -192,7 +201,7 @@ table tr:nth-child(even) td {
 }
 
 .cinema h2, h3 {
-    color: rgb(99, 181, 184);
+    color: white;
     font-family: sans-serif;
 }
 
