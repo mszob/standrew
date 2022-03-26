@@ -227,7 +227,7 @@ table tr:nth-child(odd) td:nth-child(even) {
     padding: 30px 0px 0px 50px;
 }
 
-table tr:nth-child(even) td {
+table tr:nth-child(even) td:nth-child(even) {
     padding-left: 35px;
 }
 
