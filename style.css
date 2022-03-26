@@ -1,5 +1,6 @@
 :root {
     --grey:     rgb(150,150,150);
+    --greyl:    rgb(210,210,210);
 }
 
 @font-face {
@@ -121,12 +122,14 @@ h1 {
     margin-top: 50px;
     margin-bottom: 0px;
     border-bottom: 2px dotted var(--grey);
+    color: cadetblue;
 }
 
 h2 {
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--greyl);
 }
 
 hr {
