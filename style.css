@@ -106,6 +106,14 @@ div#home {
 
 /* HTML elements */
 
+summary, summary::marker {
+    color: cadetblue;
+}
+
+details img {
+    width: 75%;
+}
+
 h1 {
     font-size: 35px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
