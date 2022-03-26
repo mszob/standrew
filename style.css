@@ -4,76 +4,141 @@
 }
 
 @font-face {
-    font-family: 'Hello';
-    src: url('cmunrm.ttf');
+    font-family: 'CMU';
+    src: url('assets/fonts/cmunrm.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-/* Fields */
+/*------------------------------------
+# DEFAULT ELEMENTS
+------------------------------------*/
+
+h1 {
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:100;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-bottom: 2px dotted var(--grey);
+    color: cadetblue;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--greyl);
+}
+
+a, a:hover, a:visited {
+    color:cadetblue;
+}
+
+audio {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+summary, summary::marker {
+    color: cadetblue;
+}
+
+/*---------------------------------------
+# UNIVERSAL FIELDS
+---------------------------------------*/
+
+/*
+## body
+*/
 
 body {
     margin: 0px;
 }
+
+/*
+## birds
+*/
+
+div.birds {
+    filter: saturate(110%);
+    position: fixed;
+    height: 100%;
+    /* max-height: 600px; */
+    width: 100%;
+    background-image:		
+        url('assets/birdsSD/three.png'), 
+        url('assets/birdsSD/yellow.png'),
+        url('assets/birdsSD/leaning.png'),
+        url('assets/birdsSD/fancy2.png'),
+        url('assets/birdsSD/fancy2.png'),
+        url('assets/birdsSD/east.png');
+    background-repeat: repeat-x;
+    background-position: 
+        0 13%,
+        0 65%,
+        0 1%,
+        0 37%,
+        0 87%,
+        0 100%;
+    background-size: 
+        400px,
+        350px,
+        250px,
+        300px,
+        300px,
+        200px;
+    animation: 30s para infinite linear;
+    }
+@keyframes para {
+    100% {
+        background-position: 
+            3000px 13%,
+            2000px 65%,
+            500px 1%,
+            800px 37%,
+            600px 87%,
+            900px 100%;
+        }
+    }
+
+/*
+## icon
+*/
+
+.icon {
+    width: 50px;
+    text-align: center;
+}
+
+/*
+## wrapper
+*/
 
 .wrapperspacer {
     height:40px;
 }
 
 .wrapper {
-    background-color: white;
-    border: 2px solid cadetblue;
-}
-
-.wrapper {
     position: relative;
     margin-left: 4%;
     margin-right: 4%;
+    min-width: 700px;
+    padding: 50px 80px 60px 80px;
+
+    background-color: white;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+
     line-height: 1.5;
     color: rgb(70,70,70);
     font-family:Arial, Helvetica, sans-serif;
-    padding: 50px 80px 60px 80px;
-    border-radius: 10px;
-    min-width: 700px;
 }
 
-.wrapper.top.cinema {
-    position: relative;
-    padding: 0px;
-    background-color: black;
-    border: 2px solid rgba(95, 158, 160, 0.7);
-    width: 900px;
-    left: 50%;
-    margin-left: -450px;
-    height: 650px;
-    top: 50%;
-    margin-top: -330px;
-
-}
-
-
-#spring {
-    margin: 50px 0px 50px 0px;
-}
-
-.cinema h1 {
-    font-size: 24px;
-}
-
-.cinema .content {
-    margin-top: 50px;
-}
-
-div.cinema {
-    color:white;
-}
-
-.full {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+/*
+## content
+*/
 
 .content {
     width: 700px;
@@ -81,7 +146,29 @@ div.cinema {
     margin-left: auto;
 }
 
-div#home {
+/*
+## footer
+*/
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 540px;
+    text-align: center;
+    color: var(--grey);
+    opacity: 0.7;
+}
+
+#footer p a {
+    margin: 0px 10px 0px 10px;
+}
+
+
+/*------------------------------------
+# HOME
+------------------------------------*/
+
+#home {
     position: absolute;
     width: 540px;
     left: 50%;
@@ -105,70 +192,20 @@ div#home {
     font-size: 20px;
 }
 
-/* HTML elements */
+#home h1 {
+    font-size: 26px;
+}
 
-summary, summary::marker {
+#home a {
+    text-decoration: none;
+}
+
+#home h1.title {
     color: cadetblue;
-}
-
-details img {
-    width: 75%;
-}
-
-h1 {
-    font-size: 35px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:100;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    border-bottom: 2px dotted var(--grey);
-    color: cadetblue;
-}
-
-h2 {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--greyl);
-}
-
-hr {
-    margin-top: 50px;
-    width: 600px;
-    border: 1px dashed grey;
-}
-
-a, a:hover, a:visited {
-    color:cadetblue;
-}
-
-audio {
-    width: 100%;
-    padding: 20px 0px 20px 0px;
-}
-
-/* Special classes */
-
-/* Banner */
-
-.icon {
-    width: 50px;
-    text-align: center;
-}
-
-h1.title {
-    color: cadetblue;
-    font-size: 50px;
+    font-size: 36px;
     margin-top: 25px;
     font-weight: 600;
     border-bottom: 0px solid var(--grey);
-}
-
-#banner a {
-    text-decoration: none;
-}
-#banner a:hover {
-    text-decoration: underline;
 }
 
 #alert p:before {
@@ -184,30 +221,13 @@ h1.title {
     font-weight: bold;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0px;
-    width: 540px;
-    text-align: center;
-    color: var(--grey);
-    opacity: 0.7;
-}
+/*------------------------------------
+# LIBRARY
+------------------------------------*/
 
-#footer p a {
-    margin: 0px 10px 0px 10px;
-}
-
-#home h1 {
-    font-size: 26px;
-}
-
-#home h1.title {
-    font-size: 36px;
-}
-
-/* LIBRARY */
-
-/* Birds table */
+/*
+## dan's birds table
+*/
 
 table td img {
     width: 100%;
@@ -244,24 +264,13 @@ table tr:nth-child(even) td:nth-child(even) {
     color: cadetblue;
 }
 
+/*------------------------------------
+# CINEMA
+------------------------------------*/
 
-/* Cinema */
-
-.player .vp-controls-wrapper .vp-title {
-    visibility: hidden !important;
-}
-
-div.cinema {
-    position: relative;
-    padding: 20px;
-    padding-bottom: 40px;
-}
-
-
-
-div.cinema h2, h3 {
-    font-family: sans-serif;
-}
+/*
+## cinema dark theme
+*/
 
 body.cinema {
     background-color: black;
@@ -271,51 +280,62 @@ body.cinema {
     filter: invert(100%);
 }
 
-.notes, .notes a {
-    color: var(--grey);
+/*
+## cinema icon
+*/
+
+.cinema .icon {
     opacity: 0.7;
 }
 
-/*Wallpaper*/
+/*
+## position helper thingy bob
+*/
 
-div.birds {
-    filter: saturate(110%);
-    position: fixed;
-    height: 100%;
-    /* max-height: 600px; */
+.full {
+    position: absolute;
     width: 100%;
-    background-image:		
-        url('assets/butt.png'), 
-        url('assets/esh.png'),
-        url('assets/stopper.png'),
-        url('assets/fancy2.png'),
-        url('assets/fancy2.png'),
-        url('assets/upchucker.png');
-    background-repeat: repeat-x;
-    background-position: 
-        0 13%,
-        0 65%,
-        0 1%,
-        0 37%,
-        0 87%,
-        0 100%;
-    background-size: 
-        400px,
-        350px,
-        250px,
-        300px,
-        300px,
-        200px;
-    animation: 30s para infinite linear;
-    }
-@keyframes para {
-    100% {
-        background-position: 
-            3000px 13%,
-            2000px 65%,
-            500px 1%,
-            800px 37%,
-            600px 87%,
-            900px 100%;
-        }
-    }
+    height: 100%;
+}
+
+/*
+## wrapper and content
+*/
+
+.wrapper.cinema {
+    position: relative;
+    padding: 20px 20px 40px 20px;
+    background-color: black;
+    border: 2px solid rgba(95, 158, 160, 0.7);
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+    height: 650px;
+    top: 50%;
+    margin-top: -330px;
+
+}
+
+.cinema .content {
+    margin-top: 50px;
+}
+
+.cinema {
+    color:white;
+}
+
+.cinema h1 {
+    font-size: 24px;
+}
+
+.cinema h2, h3 {
+    font-family: sans-serif;
+}
+
+/*
+## spring vimeo video embed
+*/
+
+#spring {
+    margin: 50px 0px 50px 0px;
+}
