@@ -32,3 +32,7 @@ div.birds {
 audio {
     opacity: 0.7;
 }
+
+#footer {
+    opacity: 1;
+}
