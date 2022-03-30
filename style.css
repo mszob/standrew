@@ -130,7 +130,7 @@ div.birds {
     padding: 50px 80px 60px 80px;
 
     background-color: var(--back);
-    border: 2px solid var(--accent2);
+    border: 2px solid var(--accent3);
     border-radius: 10px;
 
     line-height: 1.5;
@@ -163,7 +163,7 @@ div.birds {
     padding: 50px;
 
     background-color: var(--back);
-    border: 2px solid var(--accent2);
+    border: 2px solid var(--accent3);
     border-radius: 20px;
 
     line-height: 1.5;
@@ -319,7 +319,7 @@ body.cinema {
     position: relative;
     padding: 20px 20px 40px 20px;
     background-color: var(--backd);
-    border: 2px solid var(--accent2);
+    border: 2px solid var(--accent3);
     width: 900px;
     left: 50%;
     margin-left: -472px;
