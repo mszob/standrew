@@ -1,0 +1,25 @@
+:root {
+    --grey:     rgb(150,150,150);
+    --greyl:    rgb(210,210,210);
+    --greyd:    rgb(70,70,70);
+    --text:     rgb(70,70,70);
+    --accent:   cadetblue;
+    --back:     white;
+    --body:     white;
+
+    --birds:    invert(0%) saturate(110%);
+    --icon:     brightness(100%);
+    --audio:    invert(0);
+
+    --backd:    rgb(0,0,0);
+    --birdsd:   invert(100%);
+    --icond:    brightness(75%);
+}
+
+.birds {
+    visibility: hidden;
+}
+
+div#home, .wrapper {
+    border-color: rgba(0,0,0,0);
+}

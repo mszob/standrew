@@ -1,0 +1,34 @@
+:root {
+    --grey:     rgb(99, 99, 99);
+    --greyl:    rgb(50, 50, 50);
+    --greyd:    rgb(70,70,70);
+    --text:     rgb(136, 136, 136);
+    --accent:   rgb(79, 131, 133);
+    --accent2:  rgb(78, 87, 116);
+    --back:     rgb(24, 24, 28);
+    --body:     rgb(16, 18, 24);
+
+    --birds:    invert(100%);
+    --icon:     brightness(70%);
+    --audio:    invert(1);
+
+    --backd:    black;
+    --birdsd:   invert(100%) opacity(0.6);
+    --icond:    brightness(75%);
+}
+
+
+div.birds {
+    opacity: 0.6;
+    background-image:		
+        url('assets/birdsSD2/three.png'), 
+        url('assets/birdsSD2/yellow.png'),
+        url('assets/birdsSD2/leaning.png'),
+        url('assets/birdsSD2/fancy2.png'),
+        url('assets/birdsSD2/fancy2.png'),
+        url('assets/birdsSD2/east.png') !important;
+    }
+
+audio {
+    opacity: 0.7;
+}
