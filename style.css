@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--body);
+    margin: 0px;
 }
 
 h1 {
@@ -51,14 +52,6 @@ summary, summary::marker {
 ---------------------------------------*/
 
 /*
-## body
-*/
-
-body {
-    margin: 0px;
-}
-
-/*
 ## birds
 */
 
@@ -72,7 +65,7 @@ div.birds {
         url('assets/birdsSD/three.png'), 
         url('assets/birdsSD/yellow.png'),
         url('assets/birdsSD/leaning.png'),
-        url('assets/birdsSD/fancy2.png'),
+        url('assets/birdsSD/sir.png'),
         url('assets/birdsSD/fancy2.png'),
         url('assets/birdsSD/east.png');
     background-repeat: repeat-x;
@@ -87,7 +80,7 @@ div.birds {
         400px,
         350px,
         250px,
-        300px,
+        190px,
         300px,
         200px;
     animation: 30s para infinite linear;
@@ -341,7 +334,7 @@ body.cinema {
     font-size: 24px;
 }
 
-.cinema h2, h3 {
+.cinema h2, .cinema h3 {
     font-family: sans-serif;
 }
 
@@ -351,4 +344,36 @@ body.cinema {
 
 #spring {
     margin: 50px 0px 50px 0px;
+}
+
+
+
+/*------------------------------------
+# JOURNAL
+------------------------------------*/
+
+#journal h1, #journal h2, #journal h3, #journal p, #journal blockquote, #journal ul li {
+    font-family: 'CMU';
+    color: var(--text);
+    opacity: 1;
+}
+
+#journal h1, #journal h2 {
+    border-bottom: none;
+    text-align: center;
+}
+
+#journal h2 {
+    font-size: 24px;
+}
+
+#journal h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+#journal #matthias, #journal #eric {
+    margin-top: 100px;
+    text-align: justify;
 }

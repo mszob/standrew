@@ -12,21 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
     const themeToggle = document.getElementById('theme-toggle');
     themeToggle.addEventListener('click', () => {
-        // if it's light -> go dark
         if(themeStylesheet.href.includes('light')){
             themeStylesheet.href = 'dark.css';
             faviconTheme.href = 'assets/icons/favicon-dark.png';
-            //themeToggle.innerText = 'Switch to light mode';
-        //} else if(themeStylesheet.href.includes('dark')){
-          //themeStylesheet.href = 'minimal.css';
-          //themeToggle.innerText = 'Switch to light mode';
         } else {
-            // if it's dark -> go light
             themeStylesheet.href = 'light.css';
             faviconTheme.href = 'assets/icons/favicon.png';
-            //themeToggle.innerText = 'Switch to dark mode';
         }
-        // save the preference to localStorage
         localStorage.setItem('theme',themeStylesheet.href)
         localStorage.setItem('favicon',faviconTheme.href)
     })
@@ -35,16 +27,3 @@ document.addEventListener('DOMContentLoaded', () => {
 matcher = window.matchMedia('(prefers-color-scheme: dark)');
 matcher.addListener(onUpdate);
 onUpdate();
-
-lightSchemeIcon = document.querySelector('link#light-scheme-icon');
-darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
-
-function onUpdate() {
-  if (matcher.matches) {
-    lightSchemeIcon.remove();
-    document.head.append(darkSchemeIcon);
-  } else {
-    document.head.append(lightSchemeIcon);
-    darkSchemeIcon.remove();
-  }
-}
