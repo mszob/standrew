@@ -70,11 +70,11 @@ div.birds {
         url('assets/birdsSD/east.png');
     background-repeat: repeat-x;
     background-position: 
-        0 30%,
-        0 67%,
+        0 32%,
+        0 69%,
         0 1%,
-        0 19%,
-        0 89%,
+        0 20%,
+        0 91%,
         0 100%;
     background-size: 
         400px,
@@ -88,11 +88,11 @@ div.birds {
 @keyframes para {
     100% {
         background-position: 
-            3000px 30%,
-            2000px 67%,
+            3000px 32%,
+            2000px 69%,
             500px 1%,
-            800px 19%,
-            600px 89%,
+            800px 20%,
+            600px 91%,
             900px 100%;
         }
     }
@@ -233,29 +233,29 @@ div.birds {
 ## dan's birds table
 */
 
-table td {
+table.birdsTable td {
     font-family: sans-serif;
     font-style: italic;
     color: var(--grey);
     width: 49%;
 }
-table td img {
+table.birdsTable td img {
     filter: var(--birds);
     max-height: 250px;
     max-width: 80%;
 }
-table td p {
+table.birdsTable td p {
     text-align: center;
 }
 
-table tr:nth-child(odd) td:nth-child(odd) {
+table.birdsTable tr:nth-child(odd) td:nth-child(odd) {
     padding: 30px 50px 0px 0px;
 }
-table tr:nth-child(odd) td:nth-child(even) {
+table.birdsTable tr:nth-child(odd) td:nth-child(even) {
     padding: 30px 0px 0px 50px;
 }
 
-table tr:nth-child(even) td:nth-child(even) {
+table.birdsTable tr:nth-child(even) td:nth-child(even) {
     padding-left: 35px;
 }
 
@@ -270,6 +270,35 @@ table tr:nth-child(even) td:nth-child(even) {
     border-radius: 10px;
     border: 1px solid var(--accent);
     color: var(--accent);
+}
+
+/*
+## wallpaper table
+*/
+
+table.wallTable tr:nth-child(odd) td {
+    width: 32%;
+    padding: 10px;
+}
+
+table.wallTable tr td{
+    padding: 0px 10px 0px 10px;
+    color: var(--accent2);
+}
+
+table.wallTable tr:nth-child(even) td {
+    padding-bottom: 20px;
+}
+
+table.wallTable tr td img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--accent2);
+    cursor: pointer;
+}
+
+table.wallTable tr td img:hover {
+    border: 1px solid var(--accent);
 }
 
 /*------------------------------------
