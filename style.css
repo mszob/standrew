@@ -70,11 +70,11 @@ div.birds {
         url('assets/birdsSD/east.png');
     background-repeat: repeat-x;
     background-position: 
-        0 32%,
-        0 69%,
+        0 37%,
+        0 87%,
         0 1%,
         0 20%,
-        0 91%,
+        0 60%,
         0 100%;
     background-size: 
         400px,
@@ -88,11 +88,11 @@ div.birds {
 @keyframes para {
     100% {
         background-position: 
-            3000px 32%,
-            2000px 69%,
+            3000px 37%,
+            2000px 87%,
             500px 1%,
             800px 20%,
-            600px 91%,
+            600px 60%,
             900px 100%;
         }
     }
