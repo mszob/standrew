@@ -233,15 +233,19 @@ div.birds {
 ## dan's birds table
 */
 
-table td img {
-    width: 100%;
-    filter: var(--birds);
-}
 table td {
     font-family: sans-serif;
     font-style: italic;
     color: var(--grey);
     width: 49%;
+}
+table td img {
+    filter: var(--birds);
+    max-height: 250px;
+    max-width: 80%;
+}
+table td p {
+    text-align: center;
 }
 
 table tr:nth-child(odd) td:nth-child(odd) {
