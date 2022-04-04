@@ -13,6 +13,7 @@
 body {
     background-color: var(--body);
     margin: 0px;
+    color: var(--text);
 }
 
 h1 {
@@ -236,7 +237,7 @@ div.birds {
 table.birdsTable td {
     font-family: sans-serif;
     font-style: italic;
-    color: var(--grey);
+    color: var(--text);
     width: 49%;
 }
 table.birdsTable td img {
@@ -244,19 +245,18 @@ table.birdsTable td img {
     max-height: 250px;
     max-width: 80%;
 }
-table.birdsTable td p {
+table.birdsTable td {
     text-align: center;
 }
 
-table.birdsTable tr:nth-child(odd) td:nth-child(odd) {
-    padding: 30px 50px 0px 0px;
+table.birdsTable tr td:nth-child(odd) {
+    padding-right: 50px;
 }
-table.birdsTable tr:nth-child(odd) td:nth-child(even) {
-    padding: 30px 0px 0px 50px;
+table.birdsTable tr td:nth-child(even) {
+    padding-left: 50px;
 }
-
-table.birdsTable tr:nth-child(even) td:nth-child(even) {
-    padding-left: 35px;
+table.birdsTable tr:nth-child(odd) td {
+    padding-top: 50px;
 }
 
 .missing {
@@ -271,6 +271,38 @@ table.birdsTable tr:nth-child(even) td:nth-child(even) {
     border: 1px solid var(--accent);
     color: var(--accent);
 }
+
+/*
+#leaning::before {
+    content: "Carl";
+}
+#yellow::before {
+    content: "Ellie";
+}
+#three::before {
+    content: "Eric the Lesser";
+}
+#sir::before {
+    content: "Matthias";
+}
+#east::before {
+    content: "Carl";
+}
+#fancy::before {
+    content: "Matthias";
+}
+
+#leaning, #yellow, #three, #sir, #east, #fancy {
+    text-decoration: none !important;
+}
+
+#leaning::before, #yellow::before, #three::before, #sir::before, #east::before, #fancy::before {
+    font-style: normal;
+    border: 1px var(--accent2) solid;
+    padding: 2px;
+    border-radius: 3px;
+    width: 50px;
+}*/
 
 /*
 ## wallpaper table
@@ -293,12 +325,12 @@ table.wallTable tr:nth-child(even) td {
 table.wallTable tr td img {
     width: 100%;
     border-radius: 10px;
-    border: 1px solid var(--accent2);
+    border: 2px solid var(--back);
     cursor: pointer;
 }
 
 table.wallTable tr td img:hover {
-    border: 1px solid var(--accent);
+    border: 2px solid var(--accent);
 }
 
 /*------------------------------------
