@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <title>St.Andrew</title>
+    <link rel="icon" href="assets/icons/favicon-dark.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link id="theme" rel="stylesheet" type="text/css" media="screen" href="dark.css">
+</head> 
+
+<body class="cinema">
+    
+    <div class="birds"></div>
+
+    <div class="full">
+        <div class="wrapper cinema">
+            <div class="content">
+                <div id="banner"><p><a href="index.html"><img src="assets/icons/icon.png" class="icon" style="width: 50px;"></a></p></div>
+
+                <div id="game">
+                    <button id="card1" onclick="card1Function(); style.backgroundColor = 'var(--accent3)';">
+                        <p id="card1Text">Character</p>
+                    </button>
+                    <button id="card2" onclick="card2Function(); style.backgroundColor = 'var(--greyl)';">
+                        <p id="card2Text">Attribute 1</p>
+                    </button>
+                    <button id="card3" onclick="card3Function(); style.backgroundColor = 'var(--greyl)';">
+                        <p id="card3Text">Attribute 2</p>
+                    </button>
+                </div>
+                <button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+var card1Function= function(){
+  var quotes = new Array(
+    'Dr. Berge',
+    'Dr. Boe',
+    'Kathy Doering',
+    'Dr. Pribbenow',
+    'Dr. Mathiesen',
+    'Patti Zwiers',
+    'Brent Andrews',
+    'Carl Juhl',
+    'Tim Shay',
+    'Matt Smith',);
+  var i;
+
+  for (i=0;i<quotes.length;i++){
+    var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('card1Text').innerText = newquotes;
+  }
+};
+
+var card2Function= function(){
+  var quotes = new Array(
+    'has the New Testament memorized',
+    'is ripped',
+    'speaks in tongues',
+    'is 40 years younger',
+    'thinks they are John the Baptist',
+    'is president of the CLB',);
+  var i;
+
+  for (i=0;i<quotes.length;i++){
+    var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('card2Text').innerText = newquotes;
+  }
+};
+
+var card3Function= function(){
+  var quotes = new Array(
+    'and is a big fan of Rob Bell',
+    'and thinks the earth is flat',
+    'and their favorite book of the Bible is Judges',
+    'and their favorite commentary series is Anchor',
+    'and prefers N.T. Wright over Luther',
+    'and converted to Catholicism',);
+  var i;
+
+  for (i=0;i<quotes.length;i++){
+    var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('card3Text').innerText = newquotes;
+  }
+};
+
+</script>
+ 
+<style>
+    button {
+        cursor: pointer;
+    }
+    #game {
+        margin-top: 80px;
+        position: relative;
+        width: 700px;
+        height: 300px;
+    }
+    #game button, #game div {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        background-color: black;
+        border-radius: 10px;
+        border: 5px solid var(--greyl);
+        font-size: 24px;
+    }
+    #game button#card1 {
+        border: 5px solid var(--accent3);
+    }
+    #game div p, #game button p {
+        margin: 10px;
+        color: var(--text);
+    }
+    #game button:hover, #game button#card1:hover {
+        border: 5px solid var(--accent);
+    }
+    #game #card2 {
+        margin-left: 250px;
+    }
+    #game #card3 {
+        right: 0px;
+    }
+    
+    #reload {
+        position: relative;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: 70px;
+        border: none;
+        padding: 0px;
+        filter: invert(1);
+        width: 30px;
+        height: 30px;
+        background-color: var(--trans);
+        background-image: url('/assets/relaod.png');
+        background-size: 50px;;
+    }
+    #reload img {
+        opacity: 0.3;
+        width: 30px;
+        height: 30px;
+    }
+    #reload img:hover {
+        opacity: 0.6;
+    }
+</style>
+
+</body>
+
+</html>
