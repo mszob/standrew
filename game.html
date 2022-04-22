@@ -16,14 +16,14 @@
                 <div id="banner"><p><a href="index.html"><img src="assets/icons/icon.png" class="icon" style="width: 50px;"></a></p></div>
 
                 <div id="game">
-                    <button id="card1" onclick="card1Function(); style.backgroundColor = 'var(--accent3)';">
-                        <p id="card1Text">Character</p>
+                    <button id="card1" onclick="card1Function(); style.backgroundColor = 'var(--accent2)';style.color = 'var(--backd)';">
+                        Character
                     </button>
-                    <button id="card2" onclick="card2Function(); style.backgroundColor = 'var(--greyl)';">
-                        <p id="card2Text">Positive Attribute</p>
+                    <button id="card2" onclick="card2Function(); style.backgroundColor = 'cadetblue'; style.color = 'var(--backd)'; style.border = '5px solid var(--accent)';">
+                        Positive <br> Attribute
                     </button>
-                    <button id="card3" onclick="card3Function(); style.backgroundColor = 'var(--greyl)';">
-                        <p id="card3Text">Negative Attribute</p>
+                    <button id="card3" onclick="card3Function(); style.backgroundColor = 'cadetblue';  style.color = 'var(--backd)'; style.border = '5px solid var(--accent)';">
+                        Negative <br> Attribute
                     </button>
                 </div>
                 <button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button>
@@ -50,7 +50,7 @@ var card1Function= function(){
 
   for (i=0;i<quotes.length;i++){
     var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById('card1Text').innerText = newquotes;
+    document.getElementById('card1').innerText = newquotes;
   }
 };
 
@@ -59,14 +59,14 @@ var card2Function= function(){
     'has the New Testament memorized',
     'is ripped',
     'speaks in tongues',
-    'is 40 years younger',
+    'is 20 years younger',
     'thinks they are John the Baptist',
     'is president of the CLB',);
   var i;
 
   for (i=0;i<quotes.length;i++){
     var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById('card2Text').innerText = newquotes;
+    document.getElementById('card2').innerText = newquotes;
   }
 };
 
@@ -82,13 +82,18 @@ var card3Function= function(){
 
   for (i=0;i<quotes.length;i++){
     var newquotes = quotes[Math.floor(Math.random() * quotes.length)];
-    document.getElementById('card3Text').innerText = newquotes;
+    document.getElementById('card3').innerText = newquotes;
   }
 };
 
 </script>
  
 <style>
+.game .content {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    }
     button {
         cursor: pointer;
     }
@@ -106,9 +111,10 @@ var card3Function= function(){
         border-radius: 10px;
         border: 5px solid var(--greyl);
         font-size: 26px;
+        color: var(--accent2);
     }
     #game button#card1 {
-        border: 5px solid var(--accent3);
+        border: 5px solid var(--accent2);
     }
     #game button p {
         margin: 10px;

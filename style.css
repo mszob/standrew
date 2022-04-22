@@ -1,3 +1,11 @@
+:root {
+    --cards: rgb(180,180,210);
+    --backd:    black;
+    --backl:    white;
+    --birdsd:   invert(100%) opacity(0.6);
+    --icond:    brightness(75%);
+}
+
 @font-face {
     font-family: 'CMU';
     src: url('assets/fonts/cmunrm.ttf');
@@ -142,11 +150,6 @@ div.birds {
     margin-left: auto;
 }
 
-.game .content {
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 
 
