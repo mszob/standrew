@@ -20,10 +20,10 @@
                         <p id="card1Text">Character</p>
                     </button>
                     <button id="card2" onclick="card2Function(); style.backgroundColor = 'var(--greyl)';">
-                        <p id="card2Text">Attribute 1</p>
+                        <p id="card2Text">Positive Attribute</p>
                     </button>
                     <button id="card3" onclick="card3Function(); style.backgroundColor = 'var(--greyl)';">
-                        <p id="card3Text">Attribute 2</p>
+                        <p id="card3Text">Negative Attribute</p>
                     </button>
                 </div>
                 <button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button>
@@ -98,7 +98,7 @@ var card3Function= function(){
         width: 700px;
         height: 300px;
     }
-    #game button, #game div {
+    #game button {
         position: absolute;
         width: 200px;
         height: 300px;
@@ -110,9 +110,10 @@ var card3Function= function(){
     #game button#card1 {
         border: 5px solid var(--accent3);
     }
-    #game div p, #game button p {
+    #game button p {
         margin: 10px;
         color: var(--text);
+        line-height: 1.7;
     }
     #game button:hover, #game button#card1:hover {
         border: 5px solid var(--accent);
