@@ -142,6 +142,14 @@ div.birds {
     margin-left: auto;
 }
 
+.game .content {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 /*------------------------------------
 # HOME
 ------------------------------------*/
@@ -373,7 +381,7 @@ body.cinema {
 ## wrapper and content
 */
 
-.wrapper.cinema {
+.wrapper.cinema, .wrapper.game {
     position: relative;
     padding: 20px 20px 40px 20px;
     background-color: var(--backd);
