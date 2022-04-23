@@ -28,7 +28,7 @@
                     </button>
                 </div>
 
-                <button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button>
+                <div id="reloadWrapper"><button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button></div>
             </div>
         </div>
     </div>
@@ -136,42 +136,46 @@ var card3Function= function(){
 <style>
     @media only screen and (max-device-width: 550px) {
         .wrapper.game {
-            height: 1050px;
-            margin-top: -572px;
-            padding-top: 50px;
+            height: 1300px;
+            margin-top: -682px;
+            background-color: var(--trans) !important;
+            border: 0px solid var(--trans) !important;
         }
-        .cinema .content {
+        .wrapper.game .content {
             margin-top: 0px;
+            width: 850px;
         }
         #banner p {
             margin-top: 24px;
         }
         .icon {
             width: 70px;
+            opacity: 0;
         }
         .content #game {
             margin-top: 50px;
-            height: 780px
+            height: 950px;
+            width: 850px;
         }
         .content #game button {
-            width: 325px;
-            height: 470px;
-            font-size: 40px;
+            width: 400px;
+            height: 570px;
+            font-size: 50px;
             padding: 20px;
         }
         #game button#card1 {
             left: 50%;
-            margin-left: -162.5px;
+            margin-left: -200px;
             padding-bottom: 100px;
         }
         #card2, #card3 {
-            margin-top: 300px;
+            margin-top: 350px;
         }
         #game button#card2 {
-            margin-left: 50px;
+            margin-left: 0px;
         }
         #game button#card3 {
-            right: 50px;
+            right: 0px;
         }
     }
     .game .content {
@@ -211,27 +215,43 @@ var card3Function= function(){
     #game #card3 {
         right: 0px;
     }
-    
-    #reload {
+    #reloadWrapper {
         position: relative;
         left: 50%;
-        margin-left: -15px;
+        margin-left: -70px;
         margin-top: 50px;
-        border: none;
         padding: 0px;
-        width: 30px;
-        height: 30px;
-        background-color: var(--trans);
+        width: 80px;
+        height: 80px;
+        background-color: var(--accent22);
+        border-radius: 50%;
+        padding: 30px;
+    }
+    #reload {
+        border: none;
         background-image: url('/assets/relaod.png');
-        background-size: 50px;;
+        background-size: 50px;
+        padding: 0px;
+        background-color: var(--trans);
     }
     #reload img {
-        opacity: 0.3;
-        width: 30px;
-        height: 30px;
+        opacity: 0.4;
+        width: 80px;
+        height: 80px;
     }
     #reload img:hover {
         opacity: 0.6;
+    }
+    @media only screen and (min-device-width: 550px) {
+        #reloadWrapper, #reload img {
+            width: 30px;
+            height: 30px;
+            background-color: var(--accent22);
+        }
+        #reloadWrapper {
+            padding: 10px;
+            margin-left: -20px;
+        }
     }
 </style>
 

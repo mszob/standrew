@@ -33,7 +33,3 @@ audio {
 #footer {
     opacity: 1;
 }
-
-#reload {
-    filter: invert(1);
-}
