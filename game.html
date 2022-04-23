@@ -29,6 +29,8 @@
                 </div>
 
                 <div id="reloadWrapper"><button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button></div>
+                <div id="goHomeWrapper"><a id="goHome" href="index.html"><img src="assets/icons/button.png"></a></div>
+
             </div>
         </div>
     </div>
@@ -137,7 +139,7 @@ var card3Function= function(){
     @media only screen and (max-device-width: 550px) {
         .wrapper.game {
             height: 1300px;
-            margin-top: -682px;
+            margin-top: -700px;
             background-color: var(--trans) !important;
             border: 0px solid var(--trans) !important;
         }
@@ -215,10 +217,9 @@ var card3Function= function(){
     #game #card3 {
         right: 0px;
     }
-    #reloadWrapper {
-        position: relative;
+    #reloadWrapper, #goHomeWrapper {
+        position: absolute;
         left: 50%;
-        margin-left: -70px;
         margin-top: 50px;
         padding: 0px;
         width: 80px;
@@ -227,17 +228,26 @@ var card3Function= function(){
         border-radius: 50%;
         padding: 30px;
     }
-    #reload {
+    #reloadWrapper {
+        margin-left: 30px;
+    }
+    #goHomeWrapper {
+        margin-left: -170px;
+    }
+    #reload, #goHome {
         border: none;
         background-image: url('/assets/relaod.png');
         background-size: 50px;
         padding: 0px;
         background-color: var(--trans);
     }
-    #reload img {
+    #reload img, #goHome img {
         opacity: 0.4;
         width: 80px;
         height: 80px;
+    }
+    #goHome img {
+        filter: saturate(0%) brightness(0);
     }
     #reload img:hover {
         opacity: 0.6;
@@ -251,6 +261,9 @@ var card3Function= function(){
         #reloadWrapper {
             padding: 10px;
             margin-left: -20px;
+        }
+        #goHomeWrapper {
+            visibility: hidden;
         }
     }
 </style>
