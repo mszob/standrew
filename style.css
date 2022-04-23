@@ -4,6 +4,7 @@
     --backl:    white;
     --birdsd:   invert(100%) opacity(0.6);
     --icond:    brightness(75%);
+    --accent22: rgb(104, 120, 170);
 }
 
 @font-face {
@@ -396,6 +397,9 @@ body.cinema {
     top: 50%;
     margin-top: -360px;
 
+}
+.wrapper.game {
+    background-color: var(--back) !important;
 }
 
 .cinema .content {

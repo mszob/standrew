@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <title>St.Andrew</title>
-    <link rel="icon" href="assets/icons/favicon-dark.png">
+    <title>Game Room | St.Andrew</title>
+    <link id="favicon" rel="icon" href="assets/icons/favicon.png">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <link id="theme" rel="stylesheet" type="text/css" media="screen" href="dark.css">
 </head> 
 
@@ -16,13 +17,13 @@
                 <div id="banner"><p><a href="index.html"><img src="assets/icons/icon.png" class="icon" style="width: 50px;"></a></p></div>
 
                 <div id="game">
-                    <button id="card1" onclick="card1Function(); style.backgroundColor = 'var(--accent2)';style.color = 'var(--backd)';">
+                    <button id="card1" onclick="card1Function(); style.backgroundColor = 'var(--accent22)';style.color = 'var(--backl)';">
                         Character
                     </button>
-                    <button id="card2" onclick="card2Function(); style.backgroundColor = 'cadetblue'; style.color = 'var(--backd)'; style.border = '5px solid var(--accent)';">
+                    <button id="card2" onclick="card2Function(); style.backgroundColor = 'cadetblue'; style.color = 'var(--backl)'; style.border = '5px solid var(--accent)';">
                         Positive <br> Attribute
                     </button>
-                    <button id="card3" onclick="card3Function(); style.backgroundColor = 'cadetblue';  style.color = 'var(--backd)'; style.border = '5px solid var(--accent)';">
+                    <button id="card3" onclick="card3Function(); style.backgroundColor = 'cadetblue';  style.color = 'var(--backl)'; style.border = '5px solid var(--accent)';">
                         Negative <br> Attribute
                     </button>
                 </div>
@@ -151,14 +152,14 @@ var card3Function= function(){
         position: absolute;
         width: 250px;
         height: 375px;
-        background-color: black;
+        background-color: var(--back);
         border-radius: 10px;
         border: 5px solid var(--greyl);
         font-size: 26px;
         color: var(--text);
     }
     #game button#card1 {
-        border: 5px solid var(--accent2);
+        border: 5px solid var(--accent22);
     }
     #game button p {
         margin: 10px;
@@ -182,7 +183,6 @@ var card3Function= function(){
         margin-top: 50px;
         border: none;
         padding: 0px;
-        filter: invert(1);
         width: 30px;
         height: 30px;
         background-color: var(--trans);

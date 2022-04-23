@@ -13,3 +13,8 @@
     --icon:     brightness(100%);
     --audio:    invert(0);
 }
+
+
+#reload {
+    filter: invert(0);
+}
