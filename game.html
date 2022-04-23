@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Game Room | St.Andrew</title>
-    <link id="favicon" rel="icon" href="assets/icons/favicon.png">
+    <link id="favicon" rel="icon" href="assets/icons/favicon-dark.png">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     <link id="theme" rel="stylesheet" type="text/css" media="screen" href="dark.css">
@@ -14,7 +14,7 @@
     <div class="full">
         <div class="wrapper game">
             <div class="content">
-                <div id="banner"><p><a href="index.html"><img src="assets/icons/icon.png" class="icon" style="width: 50px;"></a></p></div>
+                <div id="banner"><p><a href="index.html"><img src="assets/icons/icon.png" class="icon"></a></p></div>
 
                 <div id="game">
                     <button id="card1" onclick="card1Function(); style.backgroundColor = 'var(--accent22)';style.color = 'var(--backl)';">
@@ -134,10 +134,49 @@ var card3Function= function(){
 </script>
  
 <style>
-.game .content {
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto;
+    @media only screen and (max-device-width: 550px) {
+        .wrapper.game {
+            height: 1050px;
+            margin-top: -572px;
+            padding-top: 50px;
+        }
+        .cinema .content {
+            margin-top: 0px;
+        }
+        #banner p {
+            margin-top: 24px;
+        }
+        .icon {
+            width: 70px;
+        }
+        .content #game {
+            margin-top: 50px;
+            height: 780px
+        }
+        .content #game button {
+            width: 325px;
+            height: 470px;
+            font-size: 40px;
+            padding: 20px;
+        }
+        #game button#card1 {
+            margin-left: 237.5px;
+            padding-bottom: 100px;
+        }
+        #card2, #card3 {
+            margin-top: 300px;
+        }
+        #game button#card2 {
+            margin-left: 50px;
+        }
+        #game button#card3 {
+            right: 50px;
+        }
+    }
+    .game .content {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
     }
     button {
         cursor: pointer;
@@ -157,14 +196,10 @@ var card3Function= function(){
         border: 5px solid var(--greyl);
         font-size: 26px;
         color: var(--text);
+        line-height: 1.3;
     }
     #game button#card1 {
         border: 5px solid var(--accent22);
-    }
-    #game button p {
-        margin: 10px;
-        color: var(--text);
-        line-height: 1.7;
     }
     #game button:hover, #game button#card1:hover {
         border: 5px solid var(--accent);

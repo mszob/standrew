@@ -117,6 +117,12 @@ div.birds {
     filter: var(--icon);
 }
 
+@media only screen and (max-device-width: 550px) {
+    .icon {
+        width: 70px;
+    }
+}
+
 /*
 ## wrapper
 */
@@ -349,36 +355,38 @@ table.wallTable tr td img:hover {
 # CINEMA
 ------------------------------------*/
 
-/*
-## cinema dark theme
-*/
-
-/*
-body.cinema {
-    background-color: var(--backd);
-}
-
-.cinema .birds {
-    filter: var(--birdsd);
-}*/
-
-/*
-## cinema icon
-*/
-
-/*
-.cinema .icon {
-    filter: var(--icond);
-}*/
-
-/*
-## position helper thingy bob
-*/
-
 .full {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+/*
+## Wrapper and content mobile - load first
+*/
+
+@media only screen and (max-device-width: 550px) {
+    .full .wrapper.cinema {
+        height: 800px;
+        margin-top: -452px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .full .cinema .content {
+        margin-top: 0px;
+    }
+    .cinema #banner p {
+        margin-top: 24px;
+    }
+    .full .cinema .icon {
+        width: 70px;
+    }
+    .full .cinema .content {
+        width: 820px;
+    }
+    .full .cinema #spring {
+        margin-top: 110px;
+    }
 }
 
 /*
