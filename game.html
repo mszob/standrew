@@ -233,6 +233,7 @@ var card3Function= function(){
     }
     #goHomeWrapper {
         margin-left: -170px;
+        background-color: var(--accent);
     }
     #reload, #goHome {
         border: none;
@@ -246,8 +247,13 @@ var card3Function= function(){
         width: 80px;
         height: 80px;
     }
+    @media only screen and (max-device-width: 550px) {
+        #reload img, #goHome img {
+            filter: invert(1);
+        }
+    }
     #goHome img {
-        filter: saturate(0%) brightness(0);
+        filter: saturate(0%) brightness(500%);
     }
     #reload img:hover {
         opacity: 0.6;
