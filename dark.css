@@ -34,6 +34,8 @@ audio {
     opacity: 1;
 }
 
+/* game controls */
+
 #reloadWrapper, #goHomeWrapper {
     filter: brightness(0.9);
 }
@@ -42,14 +44,14 @@ audio {
     filter: brightness(0.5);
 }
 
-#reload img, #goHome img {
-    opacity: 0.5;
-}
-
 #reload img {
     filter: invert(0);
 }
 
 #goHome img {
     filter: saturate(0%) brightness(0%);
+}
+
+#reload img, #goHome img {
+    opacity: 0.5;
 }
