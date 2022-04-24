@@ -55,3 +55,7 @@ audio {
 #reload img, #goHome img {
     opacity: 0.5;
 }
+
+input#pass {
+    opacity: 0.4;
+}

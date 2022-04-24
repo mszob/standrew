@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <title>Password Protected Page</title>
-    <link rel="icon" href="assets/favicon.png">
+    <script type="text/javascript" src="..\script.js"></script>
+    <link id="favicon" rel="icon" href="..\assets/icons/favicon-dark.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="..\style.css">
+    <link id="theme" rel="stylesheet" type="text/css" media="screen" href="..\dark.css">
     <style>
+        
         html, body {
             margin: 0;
             width: 100%;
             height: 100%;
             font-family: Arial, Helvetica, sans-serif;
         }
-        
         #dialogText {
-            color: cadetblue;
+            color: var(--text);
         }
+
+        #mainDialog, #pass, #submitPass {
+        background-color: var(--back); }
         
         #dialogWrap {
             position: absolute;
@@ -25,24 +31,31 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: white;
+        }
+
+        html, body, #contentFrame, #dialogWrap, #dialogWrapCell {
+            position: fixed !important;
+            width: 100% !important;
         }
         
         #dialogWrapCell {
             display: table-cell;
             text-align: center;
             vertical-align: middle;
+            width: 100%;
+            height: 100%;
         }
     
         #mainDialog {
-            max-width: 350px;
+            position: absolute;
+            width: 360px;
             border-radius: 10px;
-            border-top: 2px dotted grey;
-            border-bottom: 2px dotted grey;
-            border: 2px dotted grey;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
+            left: 50%;
+            margin-left: -182px;
+            top: 50%;
+            margin-top: -160px;
+
+            border: 2px solid var(--accent22);
             overflow: hidden;
             text-align: left;
         }
@@ -52,14 +65,15 @@
         }
         
         #passArea > * {
-            margin: 5px auto;
+            margin: 6px auto;
         }
 
         #pass {
-            border: 0px solid white;
             width: 100%;
             height: 40px;
             font-size: 30px;
+            border: none;
+            color: var(--accent22);
         }
         
         #messageWrapper {
@@ -83,7 +97,6 @@
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
-            background-color: white;
             border: solid cadetblue 2px;
             float: right;
             cursor: pointer;
@@ -119,22 +132,31 @@
             font-size: 20px;
         }
         #bowels {
-          color: black;
-          z-index: 1;
-          text-align: center;
-          font-family: serif;
-          font-style: italic;
-          margin-top: -50px;
+            font-size: 18px;
+            color: var(--accent22);
+            z-index: 1;
+            text-align: center;
+            font-family: serif;
+            font-style: italic;
+            margin-top: 5px;
+            padding-bottom: 20px;
+        }
+        #box {
+            border: 2px solid var(--accent);
+            margin: 20px;
+            border-radius: 5px;
         }
     </style>
   </head>
   <body>
+    <div class="birds" style="opacity: 0.6"></div>
     <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
+        <div id="dialogWrap">
         <div id="dialogWrapCell">
-            <p id="bowels">We must now dive deep into <br> the bowels  of LBS class discussions...</p>
             <br><br>
             <div id="mainDialog">
+                <p id="bowels">We must now dive deep into <br> the bowels  of LBS class discussions...</p>
+                <div id="box">
                 <div id="dialogText">Please enter the LBS wifi password from Spring semester 2022.</div>
                 <div id="passArea">
                     <input id="pass" type="password" name="pass" autofocus placeholder="Password">
@@ -158,6 +180,7 @@
                     <p>
                         Your web browser appears to be outdated. Please visit this page using a modern browser.
                     </p>
+                </div>
                 </div>
             </div>
         </div>
