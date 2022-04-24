@@ -28,7 +28,7 @@
                     </button>
                 </div>
 
-                <div id="reloadWrapper"><button id="reload" onClick="window.location.reload();"><img src="assets/reload.png"></button></div>
+                <div id="reloadWrapper"><button id="reload" onClick="reload()"><img src="assets/reload.png"></button></div>
                 <div id="goHomeWrapper"><a id="goHome" href="index.html"><img src="assets/icons/button.png"></a></div>
 
             </div>
@@ -51,29 +51,29 @@
 
 var card1Function= function(){
   var quotes = new Array(
-    'Dr. Berge',
-    'Dr. Boe',
-    'Kathy Doering',
-    'Dr. Pribbenow',
-    'Dr. Mathiesen',
-    'Patti Zwiers',
-    'Brent Andrews',
-    'Carl Juhl',
-    'Tim Shay',
-    'Matt Smith',
-    'Dr. Larsen',
-    'Dr. Veum',
-    'Zach Matthys',
-    'Brent Andrews',
-    'Ellie Bourque',
-    'Joe Bourque',
-    'Aaron Christensen',
-    'Dr. Christensen',
-    'Nate Nash',
-    'Eric Reese',
-    'Eric Smith',
-    'Matthias Szobody',
-    'Mark Undseth',);
+    'Dr.    \nBerge',
+    'Dr.    \nBoe',
+    'Kathy  \nDoering',
+    'Dr.    \nPribbenow',
+    'Dr.    \nMathiesen',
+    'Patti  \nZwiers',
+    'Brent  \nAndrews',
+    'Carl   \nJuhl',
+    'Tim    \nShay',
+    'Matt   \nSmith',
+    'Dr.    \nLarsen',
+    'Dr.    \nVeum',
+    'Zach   \nMatthys',
+    'Brent  \nAndrews',
+    'Ellie  \nBourque',
+    'Joe    \nBourque',
+    'Aaron  \nChristensen',
+    'Dr.    \nChristensen',
+    'Nate   \nNash',
+    'Eric   \nReese',
+    'Eric   \nSmith',
+    'Matthias \nSzobody',
+    'Mark   \nUndseth',);
   var i;
 
 for (i=0;i<quotes.length;i++){
@@ -133,6 +133,19 @@ var card3Function= function(){
   }
 };
 
+var reload= function() {
+    document.getElementById('card1').innerText = 'Character';
+    document.getElementById('card1').style.backgroundColor = 'var(--back)';
+
+    document.getElementById('card2').innerText = 'Positive \nAttribute';
+    document.getElementById('card2').style.backgroundColor = 'var(--back)';
+    document.getElementById('card2').style.border = '5px solid var(--greyl)';
+
+    document.getElementById('card3').innerText = 'Negative \nAttribute';
+    document.getElementById('card3').style.backgroundColor = 'var(--back)';
+    document.getElementById('card3').style.border = '5px solid var(--greyl)';
+}
+
 </script>
  
 <style>
@@ -168,7 +181,7 @@ var card3Function= function(){
         #game button#card1 {
             left: 50%;
             margin-left: -200px;
-            padding-bottom: 100px;
+            padding-bottom: 200px;
         }
         #card2, #card3 {
             margin-top: 350px;
