@@ -13,3 +13,20 @@
     --icon:     brightness(100%);
     --audio:    invert(0);
 }
+
+#reloadWrapper, #goHomeWrapper {
+    filter: brightness(1.1);
+}
+
+#reloadWrapper:hover, #goHomeWrapper:hover {
+    filter: brightness(0.5);
+}
+
+#reload img, #goHome img {
+    opacity: 0.9;
+    filter: invert(1);
+}
+
+#goHome img {
+    filter: saturate(0%) brightness(500%);
+}

@@ -218,7 +218,6 @@ var card3Function= function(){
         right: 0px;
     }
     #reloadWrapper, #goHomeWrapper {
-        filter: brightness(0.8);
         position: absolute;
         left: 50%;
         margin-top: 50px;
@@ -244,26 +243,13 @@ var card3Function= function(){
         background-color: var(--trans);
     }
     #reload img, #goHome img {
-        opacity: 0.5;
         width: 80px;
         height: 80px;
-    }
-    @media only screen and (max-device-width: 550px) {
-        #reload img, #goHome img {
-            filter: invert(1);
-        }
-    }
-    #goHome img {
-        filter: saturate(0%) brightness(500%);
-    }
-    #reload img:hover {
-        opacity: 0.6;
     }
     @media only screen and (min-device-width: 550px) {
         #reloadWrapper, #reload img {
             width: 30px;
             height: 30px;
-            background-color: var(--accent22);
         }
         #reloadWrapper {
             padding: 10px;
