@@ -16,7 +16,7 @@
         <div id="banner">
         <p><a href="game.html"><img src="assets/icons/icon.png" class="icon"></a></p>
         <h1 class="title">Welcome to St.Andrew!</h1>
-        <p>Unfortunately, our website is currently under maintenance. </p>
+        <p>Unfortunately, our site is currently under maintenance.</p>
             <p>Urgent announcements will continue to be posted here. <br/>For all other assistance, please contact the office:</p>
             <p><em><a href="mailto:st.andrew.church@protonmail.com?subject=Donut confession">st.andrew.church@protonmail.com</a></em></p>
         </div>
@@ -37,25 +37,39 @@
 <style>
     @media only screen and (max-device-width: 550px) {
         #home {
-            width: 700px;
-            margin-left: -402px;
-            height: 800px;
-            margin-top: -452px;
+            width: 710px;
+            margin-left: -407px;
         }
         .icon {
             width: 70px;
         }
         #home h1.title {
-            font-size: 50px;
+            font-size: 60px;
         }
         p, a, #footer #theme-toggle {
-            font-size: 24px;
+            font-size: 26px;
+        }
+        #banner p {
+            font-size: 29px;
         }
         #alert h1 {
-            font-size: 36px;
+            font-size: 40px;
         }
         #alert p {
-            font-size: 20px;
+            font-size: 30px;
+            margin-left: 27px;
+        }
+        #alert h1+p {
+            visibility: hidden;
+            height: 0px;
+            margin: 0px;
+        }
+        #alert p:before {
+            display: inline-block;
+            position: relative;
+            margin-left: -27px;
+            bottom: 5px;
+            height: 25px;
         }
         #footer {
             width: 700px;

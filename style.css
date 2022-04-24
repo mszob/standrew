@@ -159,6 +159,22 @@ div.birds {
 
 
 
+/*------------------------------------
+# WRAPPER
+------------------------------------*/
+
+@media only screen and (max-device-width: 550px) {
+    body #home #banner p, .wrapper.cinema #banner p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    body #home, .full .wrapper.cinema {
+        height: 800px;
+        margin-top: -452px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
 
 /*------------------------------------
 # HOME
@@ -369,8 +385,8 @@ table.wallTable tr td img:hover {
     .full .wrapper.cinema {
         height: 800px;
         margin-top: -452px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .full .cinema .content {
         margin-top: 0px;
