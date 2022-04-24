@@ -44,6 +44,9 @@ audio {
 
 #reload img, #goHome img {
     opacity: 0.5;
+}
+
+#reload img {
     filter: invert(0);
 }
 
