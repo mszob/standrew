@@ -21,7 +21,7 @@
             color: var(--text);
         }
 
-        #mainDialog, #submitPass {
+        #mainDialog {
         background-color: var(--back); }
         
         #dialogWrap {
@@ -69,13 +69,14 @@
         }
 
         #pass {
-            width: 100%;
+            position: static;
             height: 40px;
             font-size: 30px;
             border: none;
             color: var(--accent22);
             background-color: var(--trans);
-            width: 370px !important;
+            width: 270px !important;
+            overflow: hidden;
         }
         
         #messageWrapper {
@@ -99,10 +100,12 @@
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
-            border: solid cadetblue 2px;
             float: right;
             cursor: pointer;
-            color: cadetblue;
+            color: var(--back);
+            background-color: var(--accent);
+            border: 0px solid var(--trans);
+            padding: 5px;
         }
         #contentFrame {
             position: absolute;
@@ -130,7 +133,7 @@
             color: red;
         }
         input::placeholder {
-            color: rgb(200,200,200);
+            color: var(--grey);
             font-size: 20px;
         }
         #bowels {
