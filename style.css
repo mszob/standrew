@@ -44,8 +44,8 @@ h2 {
 }
 
 h3 {
-    color: var(--text);
-    font-weight: normal;
+    color: var(--text) !important;
+    font-weight: normal !important;
 }
 
 a, a:hover, a:visited {
